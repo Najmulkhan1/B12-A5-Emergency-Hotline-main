@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwindCss -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- tailwindCss -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- font -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-  </style>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- adding some custom CSS -->
-  <style type="text/tailwindcss">
-    @theme {
+    <!-- adding some custom CSS -->
+    <style type="text/tailwindcss">
+      @theme {
         --color-clifford: #da373d;
-        --font-roboto : "Roboto", sans-serif;
+        --font-roboto: "Roboto", sans-serif;
         --font-hindi: "Hind Madurai", sans-serif;
         --font-inter: "Inter", sans-serif;
       }
     </style>
-</head>
+  </head>
 
-<body class="font-hindi">
-  <header>
+  <body class="font-hindi">
+    <header class="border-2 border-red-500 lg:w-[1320px] mx-auto mt-5">
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="" class="w-[50px]"/>
+          <h1 class="text-[#01442f] font-bold">Emergency <br />Service</h1>
+        </div>
 
-</body>
+        <div>
+          <button class="btn bg-[#41ff6b1a] font-extrabold border-none rounded-3xl px-6 font-inter text-[16px]"><span>0</span><img class="w-[30px]" src="./assets/heart.png" alt=""></button>
+          <button class="btn bg-[#41ff6b1a] font-extrabold border-none rounded-3xl px-6 font-inter text-[16px]"><span>100</span><img class="w-[30px]" src="./assets/coin.png" alt=""></button>
+          <button class="btn bg-[#00A63E] font-semibold border-none rounded-3xl px-6 font-inter text-[16px] text-white"><span>0</span>Copy</button>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      
+    </main>
+  </body>
 </html>
