@@ -93,7 +93,7 @@
 
       <!-- Main Section -->
       <section
-        class="border-2 border-red-500 min-h-[300px] w-11/12 mx-auto mt-5 grid grid-cols-12 gap-6 mb-6"
+        class="min-h-[300px] w-11/12 mx-auto mt-5 grid grid-cols-12 gap-6 mb-6"
       >
         <!-- Emergency Hotline Section -->
         <div id="service-box" class="col-span-9">
@@ -130,7 +130,8 @@
                     Copy <i class="fa-regular fa-copy ml-2"></i>
                   </button>
                   <button
-                    class="btn flex-1 items-center justify-center bg-[#00A63E] text-white rounded-lg hover:!bg-gray-400"
+                    id="call-btn"
+                    class="call-btn btn flex-1 items-center justify-center bg-[#00A63E] text-white rounded-lg hover:!bg-gray-400"
                   >
                     <i class="fa-solid fa-phone"></i>Call
                   </button>
@@ -455,30 +456,22 @@
         <!-- side history-box -->
         <aside
           id="call-history-box"
-          class="bg-white col-span-3 p-3 rounded-2xl"
+          class="bg-white col-span-3 p-3 rounded-lg shadow-sm"
         >
-          <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex flex-col md:flex-row justify-between items-center mb-4">
             <h1>
               <i class="fa-regular fa-clock text-gray-500"></i> Call history
             </h1>
-            <button
-              class="btn bg-[#00A63E] border-none rounded-3xl px-6 !py-1 font-inter text-[16px] text-white"
+            <button id="clear-btn"
+              class="btn bg-[#00A63E] border-none rounded-3xl px-6 !py-1 font-inter text-[16px] text-white "
             >
-              Copy
+              Clear
             </button>
           </div>
 
           <!-- service history items -->
-          <div class="mt-4">
-            <div class="card bg-gray-100 card-sm shadow-sm">
-              <div class="card-body flex flex-row justify-between items-center">
-                <div >
-                  <h2 class="card-title">Small Card</h2>
-                  <h2>Number</h2>
-                </div>
-                  <h1>Date</h1>
-              </div>
-            </div>
+          <div id="history-parent" class="space-y-4">
+            <!-- new cards will be appended here -->
           </div>
         </aside>
       </section>

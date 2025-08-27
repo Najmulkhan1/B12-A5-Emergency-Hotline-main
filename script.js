@@ -1,25 +1,28 @@
 // innerText function
-function innerTxt (id){
-   const innertext = document.getElementById(id).innerText
+function innerTxt(id) {
+  const innertext = document.getElementById(id).innerText;
 
-   return innertext
+  return innertext;
 }
 
 // select all elements with class "heard-click", "copy-btn"
-const hardClick = document.getElementsByClassName('heard-click')
-const copyBtn = document.getElementsByClassName('copy-btn')
+const hardClick = document.getElementsByClassName("heard-click");
+const copyBtn = document.getElementsByClassName("copy-btn");
+const callBtn = document.getElementsByClassName('call-btn')
 
 // loop
 
-for(let click of hardClick){
-    click.addEventListener('click',function(){
-        // const hard = document.getElementById('current-hart').innerText
-        const hard = innerTxt('current-hart')
-        let hardConverted = parseInt(hard)
-        
-        hardConverted++
+for (let click of hardClick) {
+  click.addEventListener("click", function () {
+    // const hard = document.getElementById('current-hart').innerText
+    const hard = innerTxt("current-hart");
+    let hardConverted = parseInt(hard);
 
-        document.getElementById('current-hart').innerText = hardConverted
-        
-    })
+    hardConverted++;
+
+    document.getElementById("current-hart").innerText = hardConverted;
+  });
 }
+
+
+
