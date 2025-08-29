@@ -7,7 +7,7 @@ The primary difference between getElementById, getElementByClassName and querySe
 
 2. How do you **create and insert a new element into the DOM**?
 Ans:
-Creating and inserting a new element into the DOM in javascript like a tree element (<div>,<h1>,<p>,<button> etc). A new element dynamically three thing. Create make a new element to document.createElement() its save element memory then Modify add text, classes, ID, etc. Then insert attach to the parent on the page.
+Creating and inserting a new element into the DOM in javascript like a tree element (div,h1,p,button etc). A new element dynamically three thing. Create make a new element to document.createElement() its save element memory then Modify add text, classes, ID, etc. Then insert attach to the parent on the page.
 
 3. What is **Event Bubbling** and how does it work?
 Ans:
